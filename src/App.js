@@ -117,7 +117,7 @@ class App extends Component {
         <Navbar fluid collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <Link to="/">Scratch</Link>
+              <Link to="/">Trang chủ</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
@@ -125,8 +125,8 @@ class App extends Component {
             <Nav pullRight>
               {   this.state.userToken
                 ? <NavItem onClick={this.handleLogout}> logout </NavItem>
-                : [<RouteNavItem key={1} onClick={this.handleNavLink} href="/signup">Signup</RouteNavItem>,
-                <RouteNavItem key={2} onClick={this.handleNavLink} href="/login">Login</RouteNavItem>
+                : [<RouteNavItem key={1} onClick={this.handleNavLink} href="/signup">Đăng Ký</RouteNavItem>,
+                <RouteNavItem key={2} onClick={this.handleNavLink} href="/login">Đăng Nhập</RouteNavItem>
                 ]}
             </Nav>
           </Navbar.Collapse>
